@@ -1,20 +1,21 @@
 {
-  "extends": "expo/tsconfig",
+  "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "ignoreDeprecations": "5.0",
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
       "@components/*": ["src/components/*"],
       "@lib/*": ["src/lib/*"],
       "@constants/*": ["src/constants/*"],
-      "@types/*": ["src/types/*"],
+      "@apptypes/*": ["src/types/*"],
       "@hooks/*": ["src/hooks/*"]
     }
   },

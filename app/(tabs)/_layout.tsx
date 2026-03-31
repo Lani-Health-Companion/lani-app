@@ -46,7 +46,7 @@ export default function TabLayout() {
           title: 'Lani',
           headerTitle: 'Chat with Lani',
           tabBarIcon: ({ color, size }) => (
-            <TabBarIcon name="message" color={color} size={size} />
+            <TabBarIcon name="message-text" color={color} size={size} />
           ),
         }}
       />
@@ -56,7 +56,7 @@ export default function TabLayout() {
           title: 'Friends',
           headerTitle: 'Find Friends',
           tabBarIcon: ({ color, size }) => (
-            <TabBarIcon name="people" color={color} size={size} />
+            <TabBarIcon name="account-group" color={color} size={size} />
           ),
         }}
       />

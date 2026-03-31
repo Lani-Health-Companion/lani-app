@@ -29,7 +29,7 @@ export default function FriendsScreen() {
 
         <View style={styles.featureList}>
           <FeatureItem
-            icon="people"
+            icon="account-group"
             title="Find Peers"
             description="Connect with people who understand you"
           />

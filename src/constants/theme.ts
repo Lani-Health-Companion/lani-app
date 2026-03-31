@@ -21,47 +21,47 @@ export const THEME = {
     // Minimum 20px for seniors
     title: {
       fontSize: 28,
-      fontWeight: '700',
+      fontWeight: '700' as const,
       lineHeight: 36,
     },
     subtitle: {
       fontSize: 22,
-      fontWeight: '600',
+      fontWeight: '600' as const,
       lineHeight: 30,
     },
     heading: {
       fontSize: 20,
-      fontWeight: '600',
+      fontWeight: '600' as const,
       lineHeight: 28,
     },
     body: {
       fontSize: 18,
-      fontWeight: '400',
+      fontWeight: '400' as const,
       lineHeight: 26,
     },
     bodyBold: {
       fontSize: 18,
-      fontWeight: '600',
+      fontWeight: '600' as const,
       lineHeight: 26,
     },
     caption: {
       fontSize: 16,
-      fontWeight: '400',
+      fontWeight: '400' as const,
       lineHeight: 22,
     },
     button: {
       fontSize: 18,
-      fontWeight: '600',
+      fontWeight: '600' as const,
       lineHeight: 24,
     },
     small: {
       fontSize: 16,
-      fontWeight: '400',
+      fontWeight: '400' as const,
       lineHeight: 22,
     },
     tiny: {
       fontSize: 14,
-      fontWeight: '400',
+      fontWeight: '400' as const,
       lineHeight: 20,
     },
   },

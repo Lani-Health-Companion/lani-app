@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { supabase } from '@lib/supabase';
-import { Message, Conversation } from '@types/index';
+import { Message, Conversation } from '@apptypes/index';
 import { useAuth } from '@lib/auth';
 
 export const useConversation = () => {

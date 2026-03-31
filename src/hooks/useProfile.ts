@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import { supabase } from '@lib/supabase';
-import { Profile } from '@types/index';
+import { Profile } from '@apptypes/index';
 import { useAuth } from '@lib/auth';
 
 export const useProfile = () => {

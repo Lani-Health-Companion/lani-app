@@ -36,7 +36,7 @@ export const EmergencyButton: React.FC<EmergencyButtonProps> = ({ style }) => {
         activeOpacity={0.8}
       >
         <MaterialCommunityIcons
-          name="phone-emergency"
+          name="phone-alert"
           size={THEME.icon.large}
           color={THEME.colors.warmWhite}
           style={styles.icon}
