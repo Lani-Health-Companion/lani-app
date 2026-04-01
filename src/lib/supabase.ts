@@ -15,20 +15,40 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
 });
 
 // Handle app state changes for token refresh
-let appStateSubscription: any;
+let appStateSubscription: any = null;
 
 export const initializeAuth = () => {
+  // Clean up existing subscription if it exists
+  if (appStateSubscription) {
+    try {
+      appStateSubscription.remove();
+    } catch (e) {
+      // Ignore cleanup errors
+    }
+  }
+
   appStateSubscription = AppState.addEventListener('change', handleAppStateChange);
   return () => {
-    appStateSubscription.remove();
+    if (appStateSubscription) {
+      try {
+        appStateSubscription.remove();
+      } catch (e) {
+        // Ignore cleanup errors
+      }
+      appStateSubscription = null;
+    }
   };
 };
 
 const handleAppStateChange = async (state: any) => {
-  if (state === 'active') {
-    await supabase.auth.startAutoRefresh();
-  } else {
-    supabase.auth.stopAutoRefresh();
+  try {
+    if (state === 'active') {
+      await supabase.auth.startAutoRefresh();
+    } else {
+      supabase.auth.stopAutoRefresh();
+    }
+  } catch (error) {
+    console.error('Error handling app state change:', error);
   }
 };
 
