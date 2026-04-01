@@ -8,7 +8,7 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "scheme": "lani",
-    "newArchEnabled": true,
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -24,7 +24,8 @@
         "backgroundColor": "#4A90D9"
       },
       "edgeToEdgeEnabled": true,
-      "package": "health.lani.companion"
+      "package": "health.lani.companion",
+      "newArchEnabled": false
     },
     "web": {
       "favicon": "./assets/favicon.png"
