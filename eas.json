@@ -1,4 +1,4 @@
-﻿{
+{
     "cli":  {
                 "version":  "\u003e= 15.0.0",
                 "appVersionSource":  "remote"
@@ -14,7 +14,7 @@
                   "production":  {
                                      "autoIncrement":  true,
                                      "ios":  {
-                                                 "credentialsSource":  "local"
+                                                 "credentialsSource": "remote"
                                              }
                                  }
               },
@@ -22,8 +22,11 @@
                    "production":  {
                                       "ios":  {
                                                   "appleId":  "scottsavitt@icloud.com",
-                                                  "ascAppId":  "WILL_BE_SET",
-                                                  "appleTeamId":  "WILL_BE_SET"
+                                                  "ascAppId":  "6761446512",
+                                                  "appleTeamId":  "AU72ND77Y5",
+                                                  "ascApiKeyId":  "7WLVTQGH52",
+                                                  "ascApiKeyIssuerId":  "c0964d95-28de-4f80-9e4a-9c5e69760531",
+                                                  "ascApiKeyPath":  "E:/AI/temp/AuthKey_7WLVTQGH52.p8"
                                               },
                                       "android":  {
                                                       "serviceAccountKeyPath":  "./google-services.json",
